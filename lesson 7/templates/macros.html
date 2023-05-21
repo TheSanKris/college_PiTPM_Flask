@@ -1,0 +1,7 @@
+{% macro render_posts(words) -%}
+    <div>
+        {% for word in words %}
+            <h2>{{ word }}</h2>
+        {% endfor %}
+    </div>
+{%- endmacro %}

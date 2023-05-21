@@ -1,0 +1,19 @@
+<head>
+</head>
+<body>
+    {% import "macros.html" as  macros %}
+    {% if bookmarks and user.count != 0 %}
+    <p>You have some bookmarks and your count isn't 0</p>
+    {% endif %}
+
+    <ul>
+    {% for user in user_list %}
+        <li>{{ user }}</li>
+    {% endfor %}
+    </ul>
+
+    {% set posts = ["qwe", "asd", "zxc"] %}
+    {{ macros.render_posts(posts) }}
+
+    {% include 'sdkj.html' %}
+</body>

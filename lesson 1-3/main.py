@@ -5,10 +5,8 @@ app.debug = True
 
 @app.route('/')
 def index():
-    print(i)
     return 'Привет, МИР!'
 
-@app.route('/cases/')
 @app.route('/career/')
 def career():
     return 'Мой послужной список:'
